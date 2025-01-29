@@ -1,17 +1,24 @@
 
-const searchInput = document.querySelector("[data-search]");
+document.addEventListener("DOMContentLoaded", () => {
+    const searchInput = document.querySelector("[data-search]");
+    if (!searchInput) {
+        console.error("Search input not found!");
+        return;
+    }
 
+    const cells = document.querySelectorAll("span"); // Select all span elements
+    const image = document.querySelectorAll(".img-div");
+    searchInput.addEventListener("input", (e) => {
+        const value = e.target.value.toLowerCase();
+        image.forEach((img) => {
+            const isVisible = img.textContent.toLowerCase().includes(value);
+            img.classList.toggle("hide", !isVisible);
 
-let cell = [];
+        });
+        cells.forEach((cell) => {
+            const isVisible = cell.textContent.toLowerCase().includes(value);
+            cell.classList.toggle("hide", !isVisible);
 
-
-
-searchInput.addEventListener("input", (e) => {
-    const value =e.target.value.toLowerCase();
-    cell.forEach(cell => {
-        const isVisible = 
-        character.name.toLowerCase().includes(value) || 
-        character.race.toLowerCase().includes(value);
-        character.element.classList.toggle("hide", !isVisible );
+        });
     });
 });
