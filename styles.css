@@ -3,6 +3,10 @@
     border: 2px solid black;
 }*/
 
+body {
+    background-color: aliceblue;
+}
+
 .navbar {
     background-color: rgb(240, 240, 240);
 }
@@ -45,4 +49,12 @@
 
 footer {
     background-color: rgb(240, 240, 240);
+    margin-top: 3rem;
+    padding: 1.4rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fab {
+    font-size: 2rem;
 }
