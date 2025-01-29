@@ -11,3 +11,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#businessgen {
+    background-image: url(images/Generrate\ Now.svg);
+}
