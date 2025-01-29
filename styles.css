@@ -46,6 +46,9 @@
 #dashboardmania {
     background-image: url(images/DashboardMania.svg);
 }
+#nitpickfun {
+    background-image: url("images/nitpickception.png");
+}
 
 footer {
     background-color: rgb(240, 240, 240);
@@ -58,3 +61,7 @@ footer {
 .fab {
     font-size: 2rem;
 }
+
+.hide {
+    display: none;
+  }
