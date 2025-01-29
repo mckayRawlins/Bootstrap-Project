@@ -1,1 +1,12 @@
+.title, .img-div {
+    background-color: lightblue;
+    border: 2px solid black;
+}
 
+.img-div {
+    height: 200px;
+    background-image: url(images/wut.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
