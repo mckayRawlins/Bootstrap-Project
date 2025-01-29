@@ -12,8 +12,8 @@
 }
 
 .title {
-    font-size: 3rem;
-    
+    color: lightblue;
+    text-shadow: .2rem .2rem black;
 }
 
 .title, span, .navbar-brand {
@@ -21,6 +21,10 @@
     font-weight: 400;
     font-style: normal;
     margin-bottom: 0;
+}
+
+.title {
+    font-size: 3rem;
 }
 
 .img-div {
